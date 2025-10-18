@@ -219,6 +219,11 @@ const arrayLike = {0: 'A', 1: 'B', 2: 'C', length: 3};
 const newArrayFrom = Array.from(arrayLike);
 console.log(newArrayFrom); // Output: ['A', 'B', 'C']
 
+// fromEntries() - создает новый массив из итерируемого объекта пар [ключ, значение]
+const entriesArray = [['0', 'X'], ['1', 'Y'], ['2', 'Z']];
+const newArrayFromEntries = Array.fromEntries(entriesArray);
+console.log(newArrayFromEntries); // Output: ['X', 'Y', 'Z']
+
 // of() - создает новый массив из переданных аргументов
 const newArrayOf = Array.of(1, 2, 3, 4);
 console.log(newArrayOf); // Output: [1, 2, 3, 4]
